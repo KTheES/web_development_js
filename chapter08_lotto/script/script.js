@@ -1,0 +1,1 @@
+let randomLottoNum = (Math.random()*100);
