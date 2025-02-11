@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>평균값 계산기 만들기</title>
+  <script>
+    // let value1 = prompt('1번 숫자를 입력해주세요.');
+    // let value2 = prompt('2번 숫자를 입력해주세요.');
+
+    // let num1 = Number(value1);  //형변환
+    // let num2 = Number(value2);
+
+    // let avg =(num1+num2)/2;
+
+    // alert(value1+value2);
+
+    // <!-- value1에 4, value2에 5 입력했을 때 alert으로 9가 출력되도록 코드를 작성하시오.-->
+
+    // alert(num1 + num2);
+
+    // 그럼 합 말고 평균 내보세요 -> 평균값 alert으로 나오도록 작성하시오. value1 = 80, value2 = 78
+
+    // alert((num1 + num2 )/ 2);
+    // alert(avg);
+
+    // let value1 = prompt('1번 숫자를 입력해주세요.');
+    // let value2 = prompt('2번 숫자를 입력해주세요.');
+    // let value3 = prompt('3번 숫자를 입력해주세요.');
+    // let value4 = prompt('4번 숫자를 입력해주세요.');
+    // let value5 = prompt('5번 숫자를 입력해주세요.');
+    // let value6 = prompt('6번 숫자를 입력해주세요.');
+    // let value7 = prompt('7번 숫자를 입력해주세요.');
+    // let value8 = prompt('8번 숫자를 입력해주세요.');
+    // let value9 = prompt('9번 숫자를 입력해주세요.');
+    // let value10 = prompt('10번 숫자를 입력해주세요.');
+
+    // let num1 = Number(value1);
+    // let num2 = Number(value2);
+    // let num3 = Number(value3);
+    // let num4 = Number(value4);
+    // let num5 = Number(value5);
+    // let num6 = Number(value6);
+    // let num7 = Number(value7);
+    // let num8 = Number(value8);
+    // let num9 = Number(value9);
+    // let num10 = Number(value10);
+
+    // let avg= (num1+num2+num3+num4+num5+num6+num7+num8+num9+num10)/10;
+
+
+    // 10개짜리 클린코드 과정
+
+    // let sum = 0;
+    // for(let i=0; i<10; i++){
+    //   let value = prompt(`${i+1}+'번 숫자를 입력해주세요.`);
+    //   sum+= Number(value);
+    // }
+    // alert(avg/10);
+
+    //이상의 코드의 아쉬운 점은 예를 들어 5개의 숫자만 입력받고자 하는 경우에 반복문 내와 alert부분을 두 번 수정해야 한다는 점입니다. 이러한 하드코딩을 수정하기 위해사
+    // let totalNumber = 10;
+    // let sum = 0;
+    // for(let i=0; i<totalNumber; i++){
+    //   let value = prompt(`${i+1}+'번 숫자를 입력해주세요.`);
+    //   sum += Number(value);
+    // }
+    // alert(sum/totalNumber);
+
+
+    // 근데 이상의 코드도 totalNumber라는 변수를 매번 수정해줘야 하기 떄문에 몇 번 들어가는지 브라우저에서 확인할 수 없다는 단점이 있습니다. 그래서 아예 시작할 때 숫자가 몇 개인지 물어보도록 코드를 수정하도록 하겠습니다.
+    // let totalNumber = Number(prompt('몇 번 입력하시겠습니까? >>>'));
+    // let sum = 0;
+    // for(let i=0; i<totalNumber; i++){
+    //   let value1 = prompt(`${i+1}번째 숫자를 입력해주세요.`);
+    //   sum += Number(value1);
+    // }
+    // alert(`평균값 :${sum/totalNumber}`);
+
+    // while문으로 체질 개선하시오.
+    let i = 0;
+    let sum = 0;
+    let totalNumber = Number(prompt('몇 번 입력하시겠습니까? >>>'));
+
+    //여기서 while 반복문 시작작
+    while(i<totalNumber){
+      let value1 = Number(prompt(`${i+1}번째 숫자를 입력하세요.`));
+      sum += value1;
+
+      i++;
+    }
+    
+    alert(`평균값 :${sum/totalNumber}`);
+
+
+
+
+
+  </script>
+
+
+</head>
+<body>
+  
+</body>
+</html>
