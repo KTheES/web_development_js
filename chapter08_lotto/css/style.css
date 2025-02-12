@@ -1,0 +1,13 @@
+.ball {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  /* background-color: chocolate; */
+  background-color: white;
+  border-radius: 50%;
+  line-height: 80px;
+  font-size: 50px;
+  text-align: center;
+  margin: 5px;
+  border: 25px solid #FFC107;
+}
