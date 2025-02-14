@@ -112,6 +112,28 @@ function onUserShoot(shootType) {  // on 붙이는 이유 -> onclick
 
   let shootLeftElement = document.getElementById('shots-left')
   shootLeftElement.innerHTML = shootLeft;
+  
+  // 조건문 적용 -> shootLeft === 0일 때 게임 종료
+  if(shootLeft === 0) {
+    // 사용자가 이겼을 때 - 졌을 때 - 비겼을 때
+    // 이겼습니다 // 졌습니다 // 비겼습니다
+    if(userScore > comScore){                
+      textElement.innerHTML = '이겼습니다!'; // textElement의 경우
+      // textElement는 function의 지역 변수이므로 사용 가능
+      alert=('이겼습니다');   // alert의 경우
+    } else if(comScore > userScore) {
+      textElement.innerHTML = '졌습니다ㅠㅠㅠ';
+      alert=('졌습니다ㅠㅠㅠ');
+    }else{
+      textElement.innerHTML = '비겼습니다.';
+      alert=('비겼습니다.');
+    }
+  }
+
+  
+
+
+
 }
 
 
