@@ -125,8 +125,8 @@ function onUserShoot(shootType) {  // on 붙이는 이유 -> onclick
       textElement.innerHTML = '졌습니다ㅠㅠㅠ';
       alert=('졌습니다ㅠㅠㅠ');
     }else{
-      textElement.innerHTML = '비겼습니다.';
-      alert=('비겼습니다.');
+      textElement.innerHTML = '비겼습니다.'; // textElement의 경우
+      alert=('비겼습니다.');  // alert의 경우
     }
   }
 
