@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Hoisting</title>
+
+
+</head>
+<body bgcolor="5f5f5f">
+
+  <script>
+    hello();
+
+    function hello(){ console.log("Hello,JavaScript!") };
+
+    // 변수는 초기화 이전까지는 undefined가 나오는 것과 달리 
+    // 함수는 정의가 호출보다 밑에 있다고 하더라도 정상 실행됨.
+
+    //⬆️ 함수 선언문 방식
+    //⬇️ 함수 표현식 방식
+
+//     greet();
+
+// const greet = function() {
+//   console.log("Hello, World!");
+// }
+
+  // 이상의 코드는 함수 표현식 방식으로 변수처럼 동작하기 때문에
+  // TDZ가 발생하므로 함수 표현식을 사용할 떄는 '선언 후에 호출' 해야 합니다.
+
+  // console.log(sayHello);    // undefined
+  // sayHello();         // Uncaught TypeError: sayHello is not a function
+
+  var sayHello = function(){
+    console.log("Hi!");
+  }
+
+  sayHello();
+  console.log(sayHello)
+
+  // var를 사용하면 undefined가 저장된 상태(호이스팅된 상태)에서 함수를 호출하려고 하기 때문에 (32번 라인) TypeError가 발생함
+  // 함수 표현식은 Let / const를 사용해야 안전합니다.
+
+  </script>
+
+</body>
+</html>

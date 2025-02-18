@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이벤트 추가</title>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+</head>
+<body>
+  
+  <button class="btn">Click!</button>
+
+  <script>
+    //$
+    // $('.btn').on('click', function(){
+    //   alert('$ clicked');
+    // });
+
+    // VJS
+    document.querySelector('.btn').addEventListener('click', function(){
+      alert('VJS Clicked');
+    });
+    // 여기서 qS에서 중요한 점은 addEventListener()와, 내부의 'click'및 익명함수 argument입니다. 앞으로 자주 사용하게 될 예정입니다.
+
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>여러 개의 요소 선택</title>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  <button class="btn">버튼1</button>
+  <button class="btn">버튼2</button>
+  <button class="btn">버튼3</button>
+
+  <script>
+    // $ (모든 버튼 변경)
+    // $('.btn').text('바꿉니다.')
+
+    // qS
+    // qS만 사용할시 가장 먼저 만나는 class만 적용됨
+    // document.querySelector('.btn').innerHTML= 'js로 바꿉니다.';
+    // 모든 클래스 적용시
+    document.querySelectorAll('.btn').forEach(btn => btn.innerHTML = 'all changed');
+    // $의 경우는  $('.btn')를 통해 모든 요소를 자동으로 선택하고 변경 가능
+    // VJS의 경우에는 NodeList를 통해 반환하기 때문에 forEach()로 개별 요소 변경을 할 필요가 있음.
+    
+  </script>
+
+</body>
+</html>

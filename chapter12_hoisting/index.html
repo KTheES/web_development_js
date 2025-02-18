@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoisting</title>
+
+</head>
+<body bgcolor="5f5f5f">
+  <script>
+
+    // console.log(a); // 변수 선언이 먼저 호이스팅(초기화는 되지 않았으므로 undefined)
+    // var a = 10;     // 변수에 값 할당(초기화는 이 시점에 이루어짐)
+    // console.log(a); // 그래서 결과값은 10
+
+    //Let
+    // console.log(b);
+    // let b = 10;
+    // console.log(b);
+
+    // Let / const도 호이스팅이 되기는 하는데, var와 달리 초기화되지 않고 TDZ(Temporal Dead Zone : 일시적 사각 지대)에 머물게 됨.
+
+    //Let
+    // console.log(b);
+    // let b = 10;
+    // console.log(b);
+    // 이상의 코드의 실제 실행 방식은 
+    
+    // let b;    // 호이스팅되지만 초기화되지 않음
+    // console.log(b); // ReferenceError
+    // b = 20;
+    // console.log(b); // 결과값 20
+
+    // const : 반드시 선언과 동시에 초기화해야 함.
+    // console.log(c);
+    const c = 30;   // ReferenceError
+    console.log(c); 
+
+
+
+  </script>
+
+</body>
+</html>
