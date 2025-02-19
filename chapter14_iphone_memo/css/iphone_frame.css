@@ -1,0 +1,79 @@
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  box-sizing: border-box;
+  border: 4px solid #afafaf;
+  border-radius:45px ;
+  width: 402px;
+  height: 874px;
+  box-shadow: 0px 0px 2px 5px #000000 inset;
+  overflow: hidden;
+}
+
+.phone-header {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+}
+
+.dynamic-island {
+  box-sizing: border-box;
+  border-radius: 25px;
+  width: 150px;
+  height: 25px;
+  background-color: #000000;
+}
+
+.phone-header-left,
+.phone-header-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  width: 100px;
+  height: 100%;
+}
+
+.phone-header-left {
+  & > .phone-clock {
+    font-weight: 600;
+    columns: #eeeeee;
+    cursor: default;
+  }
+}
+
+.phone-header-right {
+  & > svg {
+  width: 20px;
+  height: 20px;
+  margin-left: 3px;
+  fill: #eeeeee;
+  stroke: #eeeeee;
+  }
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 60px;
+  width: 100%;
+  height: 100%;
+  background-color: #111111;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+
+  }
+}
