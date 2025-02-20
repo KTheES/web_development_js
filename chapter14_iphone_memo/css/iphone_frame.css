@@ -47,7 +47,7 @@
 .phone-header-left {
   & > .phone-clock {
     font-weight: 600;
-    columns: #eeeeee;
+    color: #eeeeee;
     cursor: default;
   }
 }
